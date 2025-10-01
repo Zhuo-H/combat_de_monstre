@@ -117,9 +117,8 @@ while True:
                         # time.sleep(0.5)
                         print("le monstre a rater son coûp!")
                 else:
-                    print("c'est au tour du monstre!")
-                    m_regenerate = dice(4)
-                    print(f"le monstre a regénérer {m_regenerate}hp!")
+                    m_regenerate = dice(6)
+                    print(f"le boss a regénérer {m_regenerate}hp!")
                     m_health += m_regenerate
             turn = turn * -1
 
@@ -199,7 +198,8 @@ while True:
             # time.sleep(0.5)
             print(f"vous ajouter: {regenerate} hp!")
         elif decision == 3:
-            m_level = m_level + 1####### doit perdre1 hp.
+            m_level = m_level + 1
+            health -= 1
             print("vous contournez le monstre!")
             continue
         elif decision == 4:
@@ -247,7 +247,6 @@ while True:
                 # time.sleep(0.5)
                 print("le monstre a rater son coûp!")
         else:
-            print("c'est au tour du monstre!")
             m_regenerate = dice(4)
             print(f"le monstre a regénérer {m_regenerate}hp!")
             m_health += m_regenerate
