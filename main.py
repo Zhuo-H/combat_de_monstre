@@ -76,7 +76,7 @@ while True:
                     print("Vous améliorez votre experience par tuer des montre.")
                     print("Dans les combats, vous pouvez attaquer ou regenèrer")
                     print(f"vous devez rouler un dée avec le monstre et si votre nombre est plus grande, vous pouvez faire du dégas.")
-                    print("Vous ne pouvez pas contourner le monstre!")
+                    print("Vous ne pouvez pas contourner le boss!")
                     continue
                 elif decision == 4:
                     print("merci de jouer!")
@@ -194,7 +194,7 @@ while True:
                 print("Attaque non réussit!")
         elif decision == 2:
             regenerate = dice(4)
-            health = health + regenerate
+            health += regenerate
             # time.sleep(0.5)
             print(f"vous ajouter: {regenerate} hp!")
         elif decision == 3:
@@ -207,7 +207,7 @@ while True:
             print("Vous améliorez votre experience par tuer des montre.")
             print("Dans les combats, vous pouvez attaquer ou regenèrer")
             print(f"vous devez rouler un dée avec le monstre et si votre nombre est plus grande, vous pouvez faire du dégas.")
-            print("Vous ne pouvez pas contourner le monstre!")
+            print("Vous ne pouvez pas contourner le boss!")
             continue
         elif decision == 5:
             print("merci de jouer!")
@@ -220,7 +220,6 @@ while True:
     # monster AI section
 
     elif turn == -1:
-
         # time.sleep(0.5)
         print("c'est au tour du monstre!")
         choice = dice(3)
@@ -250,7 +249,6 @@ while True:
             m_regenerate = dice(4)
             print(f"le monstre a regénérer {m_regenerate}hp!")
             m_health += m_regenerate
-
 
     if m_health <= 0:
         print("vous avez vaincu le monstre!")
