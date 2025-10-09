@@ -20,7 +20,7 @@ damage = player[1]
 level = player[2]
 
 turn = 1
-wins = 5
+wins = 0
 
 
 def dice(faces):
