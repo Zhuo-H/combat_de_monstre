@@ -20,6 +20,7 @@ damage = player[1]
 level = player[2]
 
 turn = 1
+wins = 5
 
 
 def dice(faces):
@@ -29,10 +30,10 @@ def dice(faces):
 while True:
 
     # boss battle
-    if m_level == 4:
+    if wins % 3 == 0:
         print("vous trouver face à face à un boss!")
-        m_health = 100
-        m_damage = 15
+        m_health = random.randint(100, 300)
+        m_damage = random.randint(15, 30)
         alive = True
         while alive:
             print(f" Le boss a {m_health} hp")
@@ -251,8 +252,9 @@ while True:
             m_health += m_regenerate
 
     if m_health <= 0:
-        print("vous avez vaincu le monstre!")
+        print("vous avez vaincu l'ennemi!")
         m_level += 1
+        wins += 1
         m_health = 10 * m_level
         m_damage = 3 * m_level
         damage = damage * 1.5
