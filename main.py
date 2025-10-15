@@ -84,7 +84,6 @@ while True:
 
             elif turn == -1:
 
-                # time.sleep(0.5)
                 print("c'est au tour du boss!")
                 choice = dice(3)
                 if choice == 1 or choice == 2:
