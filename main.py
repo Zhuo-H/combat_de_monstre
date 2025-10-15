@@ -68,7 +68,8 @@ while True:
                     print("Le but du jeu c'est de battre le boss au niveau 4.")
                     print("Vous améliorez votre experience par tuer des montre.")
                     print("Dans les combats, vous pouvez attaquer ou regenèrer")
-                    print(f"vous devez rouler un dée avec le monstre et si votre nombre est plus grande, vous pouvez faire du dégas.")
+                    print(f"vous devez rouler un dée avec le monstre et si votre nombre est plus grande, ")
+                    print("vous ferrez du degas")
                     print("Vous ne pouvez pas contourner le boss!")
                     continue
                 elif decision == 4:
