@@ -159,10 +159,10 @@ while True:
             difference = result - m_result
             if difference >= 4:
                 print("Dégas critique!")
-                m_health = m_health - 2 * damage
+                m_health = m_health - 2 * damage########
             elif 1 <= difference <= 3:
                 print(f"attaque reussite! vous faite: {damage} dégas.")
-                m_health = m_health - damage
+                m_health = m_health - damage#####
             else:
                 print("Attaque non réussit!")
         elif decision == 2:
@@ -170,7 +170,7 @@ while True:
             health += regenerate
             print(f"vous ajouter: {regenerate} hp!")
         elif decision == 3:
-            m_level = m_level + 1
+            m_level = m_level + 1######
             health -= 1
             print("vous contournez le monstre!")
             continue
@@ -222,7 +222,7 @@ while True:
         m_damage = 3 * m_level
         damage = damage * 1.5
         continue
-    elif health <= 0:
+    if health <= 0:
         print("le monstre vous avez vaincu!")
         restart = input("Veux-tu recommencer?(y/n)")
         if restart == "y":
