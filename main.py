@@ -31,7 +31,7 @@ def dice(faces):
 while True:
 
     # boss battle
-    if wins % 3 == 0:
+    if wins != 0 and wins % 3 == 0:
         print("vous trouver face à face à un boss!")
         m_health = random.randint(100, 300)
         m_damage = random.randint(15, 30)
@@ -159,7 +159,7 @@ while True:
             difference = result - m_result
             if difference >= 4:
                 print("Dégas critique!")
-                m_health = m_health - 2 * damage########
+                m_health = m_health - 2 * damage
             elif 1 <= difference <= 3:
                 print(f"attaque reussite! vous faite: {damage} dégas.")
                 m_health = m_health - damage#####
@@ -170,7 +170,7 @@ while True:
             health += regenerate
             print(f"vous ajouter: {regenerate} hp!")
         elif decision == 3:
-            m_level = m_level + 1######
+            m_level = m_level + 1
             health -= 1
             print("vous contournez le monstre!")
             continue
