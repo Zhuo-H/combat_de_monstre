@@ -162,7 +162,7 @@ while True:
                 m_health = m_health - 2 * damage
             elif 1 <= difference <= 3:
                 print(f"attaque reussite! vous faite: {damage} dégas.")
-                m_health = m_health - damage#####
+                m_health = m_health - damage
             else:
                 print("Attaque non réussit!")
         elif decision == 2:
